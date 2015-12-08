@@ -1,0 +1,15 @@
+<% @books.each do |book| %>
+<div class="col-md-3">
+
+<div class="thumbnail">
+  <%= link_to book_path(book) do %>
+    <%= image_tag 'rails4.jpg', class: "img-responsive" %>
+    <div class="caption">
+      <h4><%= link_to book.name, book_path(book) %></h4>
+      <h5><%= book.price.to_f %></h5>
+    </div>
+  <% end %>
+</div>
+
+</div>
+<% end %>

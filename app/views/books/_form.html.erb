@@ -1,0 +1,41 @@
+<%= simple_form_for(@book, html: { class: 'form-signin' })  do |f| %>
+<div class="box">
+
+  <br><br>
+    <div class="group show">
+      <%= f.text_field :name, label: false, class: 'inputMaterial'%>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <%= f.label :name %>
+    </div>
+    <div class="group show">
+      <%= f.text_field  :author, label: false, class: 'inputMaterial' %>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <%= f.label :author %>
+    </div>
+    <div class="group show">
+      <%= f.text_field  :description, label: false, class: 'inputMaterial' %>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <%= f.label :description %>
+    </div>
+    <div class="group show">
+      <%= f.text_field  :price ,label: false, class: 'inputMaterial' %>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <%= f.label :price %>
+    </div>
+
+    <div class="checkbox">
+      <%= f.input :availability, label: false %>
+    </div>
+
+      <%= f.button :submit %>
+
+
+  </div>
+
+
+</div>
+<% end %>
