@@ -26,6 +26,11 @@
       <span class="bar"></span>
       <%= f.label :price %>
     </div>
+    <div class="group show">
+
+      <p class="pull-left"><span style="margin-right: 15px">Image:<span>   <%= f.input  :image, label: false %> </p>
+      <p class="pull-left"><span style="margin-right: 15px">Resource:<span>   <%= f.input :resource, label: false %></p>
+    </div>
 
     <div class="checkbox">
       <%= f.input :availability, label: false %>
